@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+
+	<table id="w1944aac24c18c19b7"><thead>
+          <tr>
+            <th>Storage class</th>
+            <th>Designed for</th>
+            <th>Durability (designed for)</th>
+            <th>Availability (designed for)</th>
+            <th>Availability Zones</th>
+            <th>Min storage duration</th>
+            <th>Min billable object size</th>
+            <th>Other considerations </th>
+          </tr>
+        </thead>
+          <tbody><tr>
+            <td tabindex="-1">
+              <p>S3 Standard</p>
+            </td>
+            <td tabindex="-1">
+              <p>Frequently accessed data (more than once a month) with millisecond access</p>
+            </td>
+            <td tabindex="-1">
+              <p>99.999999999% </p>
+            </td>
+            <td tabindex="-1">
+              <p>99.99%</p>
+            </td>
+            <td tabindex="-1">
+              <p>&gt;= 3</p>
+            </td>
+            <td tabindex="-1">
+              <p>None</p>
+            </td>
+            <td tabindex="-1">
+              <p>None</p>
+            </td>
+            <td tabindex="-1">
+              <p>None</p>
+            </td>
+          </tr>
+          <tr>
+            <td tabindex="-1">
+              <p>S3 Standard-IA</p>
+            </td>
+            <td tabindex="-1">
+              <p>Long-lived, infrequently accessed data (once a month) with millisecond
+                access</p>
+            </td>
+            <td tabindex="-1">
+              <p>99.999999999% </p>
+            </td>
+            <td tabindex="-1">
+              <p>99.9%</p>
+            </td>
+            <td tabindex="-1">
+              <p>&gt;= 3</p>
+            </td>
+            <td tabindex="-1">
+              <p>30 days</p>
+            </td>
+            <td tabindex="-1">
+              <p>128 KB</p>
+            </td>
+            <td tabindex="-1">
+              <p>Per-GB retrieval fees apply. </p>
+            </td>
+          </tr>
+          <tr>
+            <td tabindex="-1">
+              <p>S3 Intelligent-Tiering</p>
+            </td>
+            <td tabindex="-1">
+              <p>Data with unknown, changing, or unpredictable access patterns</p>
+            </td>
+            <td tabindex="-1">
+              <p>99.999999999%</p>
+            </td>
+            <td tabindex="-1">
+              <p>99.9%</p>
+            </td>
+            <td tabindex="-1">
+              <p>&gt;= 3</p>
+            </td>
+            <td tabindex="-1">
+              <p>None</p>
+            </td>
+            <td tabindex="-1">
+              <p>None</p>
+            </td>
+            <td tabindex="-1">
+              <p>Monitoring and automation fees per object apply. No retrieval fees.</p>
+            </td>
+          </tr>
+          <tr>
+            <td tabindex="-1">
+              <p>S3 One Zone-IA</p>
+            </td>
+            <td tabindex="-1">
+              <p>Recreatable, infrequently accessed data (once a month) with millisecond
+                access</p>
+            </td>
+            <td tabindex="-1">
+              <p>99.999999999% </p>
+            </td>
+            <td tabindex="-1">
+              <p>99.5%</p>
+            </td>
+            <td tabindex="-1">
+              <p>1</p>
+            </td>
+            <td tabindex="-1">
+              <p>30 days</p>
+            </td>
+            <td tabindex="-1">
+              <p>128 KB</p>
+            </td>
+            <td tabindex="-1">
+              <p>Per-GB retrieval fees apply. Not resilient to the loss of the Availability
+                Zone.</p>
+            </td>
+          </tr>
+          <tr>
+            <td tabindex="-1">
+              <p>S3 Express One Zone</p>
+            </td>
+            <td tabindex="-1">
+              <p>Single-digit millisecond data access for latency-sensitive applications within a single AWS Availability Zone</p>
+            </td>
+            <td tabindex="-1">
+              <p>99.999999999% </p>
+            </td>
+            <td tabindex="-1">
+              <p>99.95%</p>
+            </td>
+            <td tabindex="-1">
+              <p>1</p>
+            </td>
+            <td tabindex="-1">
+              <p>None</p>
+            </td>
+            <td tabindex="-1">
+              <p>None</p>
+            </td>
+            <td tabindex="-1">
+              <p>S3 Express One Zone objects are stored in a single AWS Availability Zone that you
+                choose. </p>
+            </td>
+          </tr>
+          <tr>
+            <td tabindex="-1">
+              <p>S3 Glacier Instant Retrieval</p>
+            </td>
+            <td tabindex="-1">Long-lived, archive data accessed once a quarter with millisecond access</td>
+            <td tabindex="-1">99.999999999% </td>
+            <td tabindex="-1">
+              <p>99.9%</p>
+            </td>
+            <td tabindex="-1">
+              <p>&gt;= 3</p>
+            </td>
+            <td tabindex="-1">
+              <p>90 days</p>
+            </td>
+            <td tabindex="-1">
+              <p>128 KB</p>
+            </td>
+            <td tabindex="-1">Per-GB retrieval fees apply.</td>
+          </tr>
+          <tr>
+            <td tabindex="-1">
+              <p>S3 Glacier Flexible Retrieval</p>
+            </td>
+            <td tabindex="-1">Long-lived archive data accessed once a year with retrieval times of minutes to
+              hours</td>
+            <td tabindex="-1">99.999999999% </td>
+            <td tabindex="-1">
+              <p>99.99% (after you restore objects)</p>
+            </td>
+            <td tabindex="-1">
+              <p>&gt;= 3</p>
+            </td>
+            <td tabindex="-1">
+              <p>90 days</p>
+            </td>
+            <td tabindex="-1">
+              <p>NA*</p>
+            </td>
+            <td tabindex="-1">Per-GB retrieval fees apply. You must first restore archived objects before you
+              can access them. For information, see <a href="./restoring-objects.html">Restoring an archived object</a>.</td>
+          </tr>
+          <tr>
+            <td tabindex="-1">
+              <p>S3 Glacier Deep Archive</p>
+            </td>
+            <td tabindex="-1">Long-lived archive data accessed less than once a year with retrieval times of
+              hours</td>
+            <td tabindex="-1">99.999999999% </td>
+            <td tabindex="-1">
+              <p>99.99% (after you restore objects)</p>
+            </td>
+            <td tabindex="-1">
+              <p>&gt;= 3</p>
+            </td>
+            <td tabindex="-1">
+              <p>180 days</p>
+            </td>
+            <td tabindex="-1">
+              <p>NA**</p>
+            </td>
+            <td tabindex="-1">Per-GB retrieval fees apply. You must first restore archived objects before you
+              can access them. For information, see <a href="./restoring-objects.html">Restoring an archived object</a>.</td>
+          </tr>
+          <tr>
+            <td tabindex="-1">
+              <p>RRS (not recommended)</p>
+            </td>
+            <td tabindex="-1">
+              <p>Noncritical, frequently accessed data with millisecond access</p>
+            </td>
+            <td tabindex="-1">
+              <p>99.99% </p>
+            </td>
+            <td tabindex="-1">
+              <p>99.99%</p>
+            </td>
+            <td tabindex="-1">
+              <p>&gt;= 3</p>
+            </td>
+            <td tabindex="-1">
+              <p>None</p>
+            </td>
+            <td tabindex="-1">
+              <p>None</p>
+            </td>
+            <td tabindex="-1">
+              <p>None</p>
+            </td>
+          </tr>
+        </tbody></table>
+
+</body>
+</html>
+
